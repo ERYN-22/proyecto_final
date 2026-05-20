@@ -3,10 +3,10 @@
 <html lang="es">
 
 <meta charset="utf-8">
-<title>Presupuesto</title>
+<title>Gestor_De_Gastos</title>
 </head>
 <body>
-<h1>MostrarBalance</h1>
-<?php require('');?>
+<h1>Mostrar_Balance</h1>
+<?php require_once('vista/formulario.php');?>
 </body>
 </html>

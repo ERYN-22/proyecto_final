@@ -1,9 +1,0 @@
-<?php
-class HistorialDeMovimiento
-
-{
-    public
-    
-}
-
-?>
