@@ -4,6 +4,6 @@ function MostrarPlantilla(string $nombreDePlantilla,
 
 {
     extract($data);
-    require("vista/plantillas/$nombreDePlantilla.php");
+    require("xampp/vista/plantillas/$nombreDePlantilla.php");
 }
  ?>

@@ -3,23 +3,24 @@ class Movimiento
 
 {
     public string $id;
-    public string $cantidad;
-    public int $periodicidad;
-    public Date $fecha;
+    public int $cantidad;
+    public string $periodicidadDelMovimento;
+    public DateTime $fechaDelMovimiento;
 
-    public function __construct(string $id, 
-                                string $cantidad, 
-                                int $periodicidad, 
-                                DateTime $fecha )
+    public function __construct(int $cantidad, 
+                                string $periodicidadDelMovimento, 
+                                DateTime $fechaDelMovimiento)
 
     {
-        $this->id = $id;
         $this->cantidad = $cantidad;
-        $this->periodicidad = $periodicidad;
-        $this->fecha = $fecha;
+        $this->periodicidadDelMovimiento = $periodicidadDelMovimento;
+        $this->fechaDelMovimiento = $fechaDelMovimiento;
     }
 
-
+    public function FechaDelMovimientoATexto() : string
+    {
+        return $this->fechaDelMovimiento->format("%d/%m/%y");
+    }
 }
 
 ?>
